@@ -52,7 +52,7 @@ jobs:
           make -j$(nproc) otapackage
 
       - name: 📦 Upload Flashable ZIP
-        uses: actions/upload-artifact@v3
+        uses: uses: actions/upload-artifact@v4
         with:
           name: SkyOS-AOSP15
           path: ~/rom/out/target/product/fire/*.zip
