@@ -31,7 +31,7 @@ jobs:
 
       - name: 📁 Create Manifest Folder & Init Repo
         run: |
-          mkdir -p ~/rom && cd ~/rom
+          mkdir ~/rom && cd ~/rom
           repo init -u https://github.com/aosp-mirror/platform_manifest -b android-15.0.0_r3
           cp -r ../rom/local_manifest.xml .repo/local_manifests/
 
