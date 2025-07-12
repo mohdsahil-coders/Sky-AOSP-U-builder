@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Device tree -->
+  <project name="PixelExperience-Devices/device_xiaomi_fire" path="device/xiaomi/fire" remote="github" revision="13" />
+
+  <!-- Vendor blobs -->
+  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi/fire" remote="github" revision="thirteen" />
+
+  <!-- Kernel source -->
+  <project name="ArrowOS-Devices/kernel_xiaomi_sm4375" path="kernel/xiaomi/fire" remote="github" revision="arrow-13.0" />
+</manifest>
