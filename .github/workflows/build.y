@@ -16,10 +16,11 @@ jobs:
         uses: actions/checkout@v3
 
   
-- name: Install dependencies
-  run: |
-    sudo apt-get update
-    sudo apt-get install -y bc bison build-essential curl flex g++-multilib \
+steps:
+  - name: Install packages
+    run: |
+      sudo apt update
+      sudo apt install -y git curl bc bison build-essential curl flex g++-multilib \
     gcc-multilib git gnupg gperf imagemagick lib32readline-dev lib32z1-dev \
     liblz4-tool libncurses-dev libsdl1.2-dev libssl-dev \
     libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools \
