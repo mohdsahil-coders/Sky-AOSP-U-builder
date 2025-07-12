@@ -17,13 +17,13 @@ jobs:
 
   
 - name: ⚙️ Install Required Packages
-  run: |
-    sudo apt-get update
-    sudo apt-get install -y bc bison build-essential curl flex g++-multilib \
-    gcc-multilib git gnupg gperf imagemagick lib32z1-dev liblz4-tool \
-    libncurses-dev lib32ncurses6-dev libsdl1.2-dev libssl-dev libxml2 \
-    libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc \
-    zip zlib1g-dev ccache
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bc bison build-essential curl flex g++-multilib \
+          gcc-multilib git gnupg gperf imagemagick libncurses-dev lib32ncurses6-dev \
+          lib32readline-dev lib32z1-dev liblz4-tool \
+          libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop \
+          pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev ccache
 
       - name: ⚙️ Setup ccache
         run: |
